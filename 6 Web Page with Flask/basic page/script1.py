@@ -26,5 +26,9 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/delaynie/')
+def delaynie():
+    return render_template("grogan.html")
+
 if __name__=="__main__":
     app.run(debug=True)
